@@ -15,7 +15,6 @@ def fetch_player_session(player_id):
 def add_events_batch():
     batch = request.get_json()
     db.save_batch(batch)
- #   print(batch)
     response = None
     return jsonify(response)
 
