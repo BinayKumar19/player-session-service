@@ -5,7 +5,7 @@ app = Flask(__name__)
 db = CassandraDB()
 
 
-@app.route('/fetchsession/<player_id>', methods=['GET'])
+@app.route('/session/<player_id>', methods=['GET'])
 def fetch_player_session(player_id):
     """
     Returns: Completed events for the given player
