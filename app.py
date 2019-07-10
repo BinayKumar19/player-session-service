@@ -9,7 +9,8 @@ def fetch_player_session(player_id):
     #player_id = request.args.get('player_id')
     events = db.get_player_events(player_id)
     print(events)
-    return jsonify(events)
+#    return jsonify(events)
+    return events
 
 @app.route('/batch',  methods=['POST'])
 def add_events_batch():
